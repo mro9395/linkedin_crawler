@@ -49,7 +49,7 @@ while user_continue == "Y":
 
     elif call == "By ID":
         id_requested = input("ID:")
-        r = linkedin.get('https://api.linkedin.com/v1/people/id=' + id_requested + ':(id,first-name,last-name,headline,industry,location,specialties,summary,positions,num-connections)?format=json')
+        r = linkedin.get('https://api.linkedin.com/v1/people/id=' + id_requested + ':(id,first-name,last-name,headline,three-current-positions,industry,location,specialties,summary,positions,num-connections)?format=json')
 
     elif call == "URL":
         public_url = input("URL:")
